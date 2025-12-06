@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="toolbar"><h1>Upload a video</h1></div>
+
+  <form method="post" enctype="multipart/form-data" class="upload-form">{% csrf_token %}
+    {{ form.file }}
+    <button class="upload-btn" type="submit">Upload</button>
+  </form>
+
+  <p class="muted">Allowed: standard video files. Large files might take time to upload — in production use background processing.</p>
+{% endblock %}

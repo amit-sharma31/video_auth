@@ -1,0 +1,22 @@
+/* Minimal, resilient styles for Video_Auth app */
+:root{--bg:#fafafa;--card:#fff;--muted:#666;--accent:#2979ff;--success:#28a745;--danger:#dc3545}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,Helvetica,sans-serif;background:var(--bg);color:#111}
+.site-header{background:linear-gradient(90deg,#0f172a,#0b1220);color:#fff;padding:0.75rem 1rem;display:flex;justify-content:space-between;align-items:center}
+.site-header .brand{font-weight:700;letter-spacing:0.2px}
+.site-nav a{color:rgba(255,255,255,0.9);text-decoration:none;margin-left:1rem}
+.container{max-width:980px;margin:2rem auto;padding:1rem}
+.card{background:var(--card);box-shadow:0 1px 6px rgba(16,24,40,0.06);border-radius:8px;padding:1rem}
+h1{margin:0 0 0.5rem 0}
+.toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+.upload-btn{background:var(--accent);color:#fff;border:none;padding:.5rem .9rem;border-radius:6px;cursor:pointer}
+.status-badge{display:inline-block;padding:.18rem .5rem;border-radius:999px;font-size:.8rem;color:#fff}
+.status-verified{background:var(--success)}
+.status-duplicate{background:var(--danger)}
+.video-list{list-style:none;padding:0;margin:0;}
+.video-item{display:flex;justify-content:space-between;align-items:center;padding:.6rem .75rem;border-bottom:1px solid #eef2f7}
+.video-meta{display:flex;gap:0.75rem;align-items:center}
+.muted{color:var(--muted);font-size:.9rem}
+form.upload-form{display:flex;gap:0.5rem;align-items:center}
+input[type=file]{padding:.25rem}
+.footer{text-align:center;color:#666;font-size:.85rem;margin-top:2rem}
+@media (max-width:600px){.toolbar{flex-direction:column;align-items:flex-start;gap:.6rem}}
